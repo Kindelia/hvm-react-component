@@ -18,3 +18,5 @@ Make sure to replace `Apps.MyApp` by your app's name, and `code_here` by your
 app's HVM code. This can be obtained running `kind2 to-hvm Apps/MyApp/_.kind2`.
 For an example, check [src/index.js](src/index.js). The code of a demo app is
 available on [Wikind/Apps/Demo](https://github.com/Kindelia/Wikind/blob/master/Apps/Demo/_.kind2).
+
+[Live version!](https://kindelia.github.io/hvm-react-component)
