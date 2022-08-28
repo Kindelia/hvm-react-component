@@ -23,7 +23,7 @@ kind2 to-hvm Apps/MyApp/_.kind2
 3. Include it on your React app:
 
 ```javascript
-import "hvm-react-component" as HVM_Component;
+import HVM_Component from "hvm-react-component";
 
 const main = "Apps.MyApp";
 const code = "code_here";
