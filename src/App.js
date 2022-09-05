@@ -1,5 +1,3 @@
-import logo from './logo.svg';
-import './App.css';
 import React from "react";
 
 import hvm from "hvm-js";
@@ -7,7 +5,7 @@ import hvm from "hvm-js";
 // We're using React.Component, because pure components are terrible for state
 // management, and `useEffect()` is called more than once in ill-specified ways.
 class App extends React.Component {
-  
+
   constructor(props) {
     super(props);
     this.runtime = null;
@@ -57,7 +55,7 @@ class App extends React.Component {
       ]};
       this.run_event("mouse_down", [button, mouse_pos]);
     });
-    
+
     // mouse_up event
     document.body.addEventListener("mouseup", e => {
       var button = {$: "Num", numb: BigInt(e.button)};
@@ -179,7 +177,7 @@ const EXTRA_CODE = APP_MAIN => `
   (Main.when e s) = ((App.when ${APP_MAIN}) e s)
 
   // HVM needs this to define arities
-  Load = 
+  Load =
     let lib = End
     let lib = (Import lib App.Event.init)
     let lib = (Import lib App.Event.frame)
