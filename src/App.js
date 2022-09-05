@@ -129,6 +129,9 @@ class App extends React.Component {
           for (var child of this.runtime.list(term.args[3])) {
             children.push(this.render_term(child));
           }
+          if (tag === 'img') {
+            children = null;
+          }
           if (term.tag === "input" || term.tag === "textarea") {
             props.onInput = e => {
               var elem = this.runtime.unstring(e.target.id || "");
